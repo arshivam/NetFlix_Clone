@@ -13,7 +13,7 @@ body{
     height: 100vh;
     background-image: url("./assets/images/background.jpg");
     background-position: center center;
-    background-size: max(1200px, 100vw);
+    /* background-size: max(1200px, 100vw); */
     background-repeat: no-repeat;
     position: relative;
 }
@@ -98,6 +98,7 @@ nav{
     font-style: normal;
     font-size: 20px;
     text-align: center;
+    color: white
 }
 
 .sepration{
@@ -144,15 +145,15 @@ nav{
 }
 .image :first-child{
     position: relative;
-    width: 30vw;
+    width: 432px;
     z-index: 10;
 }
 
 .image :nth-child(2){
     position: absolute;
-    width: 22vw;
-    top: 72px;
-    left: 60px;
+    width: 318px;
+    top: 66px;
+    left: 57px;
 }
 
 .info-content :first-child{
@@ -195,8 +196,8 @@ nav{
 .video3{
     position: absolute;
     top: 42px;
-    right: 129px;
-    width: 26vw;
+    right: 125px;
+    width: 398px;
 }
 
 .image3{
@@ -249,6 +250,9 @@ nav{
     transition: all 1s ease-out;
 }
 
+.faqbox span {
+    color: white;
+}
 .faqbox svg {
     color: white;
 }
@@ -287,4 +291,31 @@ nav{
 .footerFlex button,span {
     color: #b6b2b2;
     margin: 10px 0px;
+}
+
+
+@media screen and (max-width:1000px) {
+    .info {
+        height: 800px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-content2{
+        padding-top: 60px;
+    }
+
+    .hero-btn{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+    nav{
+        flex-direction: column;
+    }
 }
